@@ -131,11 +131,11 @@
 
         SYMBOL {
             bindings = <
-&kp TILDE  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6    &kp F7         &kp F8    &kp F9    &kp F10   &trans
-&trans     &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &trans    &trans         &trans    &kp F11   &kp F12   &trans
-&trans     &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_LEFT   &kp HOME  &kp PG_UP      &kp LBRC  &kp RBRC  &kp PIPE  &trans
-&trans     &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_RIGHT  &kp END   &kp PAGE_DOWN  &kp LBKT  &kp RBKT  &kp BSLH  &trans
-&mkp MCLK  &trans           &trans           &trans           &tap_to_layer_3  &trans             &mkp LCLK        &trans    &trans         &trans    &trans    &trans
+&kp TILDE  &kp F1        &kp F2        &kp F3        &kp F4           &kp F5          &mmv MOVE_UP     &kp F6    &kp F7         &kp F8  &kp F9   &kp F10  &trans
+&trans     &trans        &trans        &trans        &trans           &trans          &mmv MOVE_DOWN   &trans    &trans         &trans  &kp F11  &kp F12  &trans
+&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &mmv MOVE_LEFT   &kp HOME  &kp PG_UP      &trans  &trans   &trans   &trans
+&trans     &bt BT_CLR    &out OUT_USB  &out OUT_USB  &trans           &trans          &mmv MOVE_RIGHT  &kp END   &kp PAGE_DOWN  &trans  &trans   &trans   &trans
+&mkp MCLK  &trans        &trans        &trans        &tap_to_layer_3  &trans          &mkp LCLK        &trans    &trans         &trans  &trans   &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -144,14 +144,14 @@
 
         BLUETOOTH {
             bindings = <
-&studio_unlock  &kp F1        &kp F2          &kp F3        &kp F4           &kp F5          &mmv MOVE_UP     &kp F6       &kp F7           &kp F8  &kp F9   &kp F10  &trans
-&trans          &trans        &trans          &trans        &trans           &trans          &mmv MOVE_DOWN   &trans       &trans           &trans  &kp F11  &kp F12  &trans
-&bootloader     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &mmv MOVE_LEFT   &bootloader  &trans           &trans  &trans   &trans   &trans
-&sys_reset      &bt BT_CLR    &bt BT_CLR_ALL  &out OUT_TOG  &trans           &trans          &mmv MOVE_RIGHT  &sys_reset   &trans           &trans  &trans   &trans   &trans
-&kp C_MUTE      &trans        &trans          &trans        &tap_to_layer_0  &trans          &mkp LCLK        &trans       &tap_to_layer_0  &trans  &trans   &trans
+&studio_unlock   &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6       &kp F7           &kp F8  &kp F9   &kp F10  &trans
+&trans           &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &trans       &trans           &trans  &kp F11  &kp F12  &trans
+&bootloader      &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_LEFT   &bootloader  &trans           &trans  &trans   &trans   &trans
+&sys_reset       &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_RIGHT  &sys_reset   &trans           &trans  &trans   &trans   &trans
+&rgb_ug RGB_TOG  &trans           &trans           &trans           &tap_to_layer_0  &trans             &mkp LCLK        &trans       &tap_to_layer_0  &trans  &trans   &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&rgb_encoder>;
             label = "BT";
         };
     };
