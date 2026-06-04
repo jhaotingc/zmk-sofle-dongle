@@ -118,11 +118,11 @@
 
         FN {
             bindings = <
-&kp GRAVE        &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6    &kp F7           &kp F8     &kp F9    &kp F10    &trans
-&trans           &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &trans    &trans           &trans     &kp F11   &kp F12    &trans
-&trans           &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_LEFT   &kp TAB   &kp UP           &kp DEL    &kp HOME  &kp PG_UP  &trans
-&trans           &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN         &kp RIGHT  &kp END   &kp PG_DN  &trans
-&rgb_ug RGB_TOG  &trans           &trans           &trans           &trans           &trans             &mkp LCLK        &trans    &tap_to_layer_3  &trans     &trans    &trans
+&kp GRAVE        &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans    &trans           &trans     &kp MINUS  &kp EQUAL  &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans    &trans           &trans     &kp LBKT   &kp RBKT   &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp TAB   &kp UP           &kp DEL    &trans     &trans     &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN         &kp RIGHT  &trans     &trans     &trans
+&rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans    &tap_to_layer_3  &trans     &trans     &trans
             >;
 
             display-name = "FN";
@@ -131,11 +131,11 @@
 
         SYMBOL {
             bindings = <
-&kp TILDE  &kp F1     &kp F2     &kp F3    &kp F4           &kp F5      &mmv MOVE_UP     &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &trans
-&trans     &trans     &trans     &trans    &trans           &trans      &mmv MOVE_DOWN   &trans     &trans     &trans    &kp F11   &kp F12   &trans
-&trans     &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC         &kp PIPE    &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE  &trans
-&trans     &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT         &kp BSLH    &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &trans
-&mkp MCLK  &trans     &trans     &trans    &tap_to_layer_3  &trans      &mkp LCLK        &trans     &trans     &trans    &trans    &trans
+&kp TILDE  &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6    &kp F7         &kp F8    &kp F9    &kp F10   &trans
+&trans     &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &trans    &trans         &trans    &kp F11   &kp F12   &trans
+&trans     &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_SPD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI    &mmv MOVE_LEFT   &kp HOME  &kp PG_UP      &kp LBRC  &kp RBRC  &kp PIPE  &trans
+&trans     &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD    &mmv MOVE_RIGHT  &kp END   &kp PAGE_DOWN  &kp LBKT  &kp RBKT  &kp BSLH  &trans
+&mkp MCLK  &trans           &trans           &trans           &tap_to_layer_3  &trans             &mkp LCLK        &trans    &trans         &trans    &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
