@@ -116,7 +116,7 @@
             display-name = "QWER";
         };
 
-        NUMBER {
+        NUMBERS {
             bindings = <
 &kp GRAVE        &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans    &trans           &trans     &kp MINUS  &kp EQUAL  &trans
 &trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans    &trans           &trans     &kp LBKT   &kp RBKT   &trans
@@ -142,7 +142,7 @@
             label = "SYM";
         };
 
-        FN {
+        FUNCTIONS {
             bindings = <
 &studio_unlock   &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6       &kp F7           &kp F8  &kp F9   &kp F10  &trans
 &trans           &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &trans       &trans           &trans  &kp F11  &kp F12  &trans
