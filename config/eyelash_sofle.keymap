@@ -120,8 +120,8 @@
             bindings = <
 &kp GRAVE        &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &trans    &trans           &trans     &kp MINUS  &kp EQUAL  &trans
 &trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans    &trans           &trans     &kp LBKT   &kp RBKT   &trans
-&trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &kp TAB   &kp UP           &kp DEL    &trans     &trans     &trans
-&trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN         &kp RIGHT  &trans     &trans     &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &trans    &kp UP           &kp DEL    &kp MINUS  &kp EQUAL  &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &kp LEFT  &kp DOWN         &kp RIGHT  &kp LBKT   &kp RBKT   &trans
 &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans    &tap_to_layer_3  &trans     &trans     &trans
             >;
 
@@ -131,18 +131,18 @@
 
         SYMBOL {
             bindings = <
-&kp TILDE  &kp F1        &kp F2        &kp F3        &kp F4           &kp F5    &mmv MOVE_UP     &kp F6    &kp F7         &kp F8  &kp F9   &kp F10  &trans
-&trans     &trans        &trans        &trans        &trans           &trans    &mmv MOVE_DOWN   &trans    &trans         &trans  &kp F11  &kp F12  &trans
-&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &trans    &mmv MOVE_LEFT   &kp HOME  &kp PG_UP      &trans  &trans   &trans   &trans
-&trans     &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &trans           &trans    &mmv MOVE_RIGHT  &kp END   &kp PAGE_DOWN  &trans  &trans   &trans   &trans
-&mkp MCLK  &trans        &trans        &trans        &tap_to_layer_3  &trans    &mkp LCLK        &trans    &trans         &trans  &trans   &trans
+&kp GRAVE  &kp EXCL      &kp AT        &kp HASH      &kp DLLR         &kp PRCNT       &mmv MOVE_UP     &kp CARET  &kp AMPS       &kp STAR  &kp LPAR   &kp RPAR   &trans
+&trans     &trans        &trans        &trans        &trans           &trans          &mmv MOVE_DOWN   &trans     &trans         &trans    &kp LBKT   &kp RBKT   &trans
+&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &mmv MOVE_LEFT   &kp HOME   &kp PG_UP      &kp DEL   &kp MINUS  &kp EQUAL  &trans
+&trans     &bt BT_CLR    &out OUT_USB  &out OUT_BLE  &trans           &trans          &mmv MOVE_RIGHT  &kp END    &kp PAGE_DOWN  &trans    &kp LBKT   &kp RBKT   &trans
+&mkp MCLK  &trans        &trans        &trans        &tap_to_layer_3  &trans          &mkp LCLK        &trans     &trans         &trans    &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
             label = "SYM";
         };
 
-        BLUETOOTH {
+        FN_RGB {
             bindings = <
 &studio_unlock   &kp F1           &kp F2           &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6       &kp F7           &kp F8  &kp F9   &kp F10  &trans
 &trans           &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &trans       &trans           &trans  &kp F11  &kp F12  &trans
@@ -152,7 +152,7 @@
             >;
 
             sensor-bindings = <&rgb_encoder>;
-            label = "BT";
+            label = "FN_RGB";
         };
     };
 };
